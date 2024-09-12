@@ -1,59 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-family: "Play", system-ui;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 header {
+    font-family: "Play", system-ui;
     background-color: #000000;
     color: white;
-    width: 1920px;
-    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: white;
-    font-display: pl;
     font-weight: bold;
-    width: 163.88px;
-    height: 53.77px;
 }
 
+.imgcenter {
+    text-align: center;
+}
+.br {
+    background-color: #E31937;
+    color: #000000;
+}
+.desafio{
+    font-family: "Play", system-ui;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+}
+.desafio_palavra {
+    color: #E31937;
+    font-weight: bold;
+}
 .hero {
     display: grid;
     place-items: center;
     background: url('formula-e.jpg') no-repeat center center/cover;
     height: 300px;
-    color: white;
+    color: #000000;
     text-align: center;
 }
-
 .hero-text h1 {
     font-size: 2rem;
 }
-
 main {
+    flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
-}
+    gap: 5px; 
 
+    text-align: center;
+    width: 4567px;
+    height: 500px;
+}
+.carousel-item img {
+    height: 500px;
+    width: 100%;  
+    object-fit: cover; 
+    padding-top: 40px;
+}
 section {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
 }
@@ -61,14 +92,24 @@ section {
 h2 {
     margin-bottom: 10px;
 }
-
+.texto {
+    max-width: 80%; /* Ajusta a largura do texto */
+    margin: 0 auto;
+    text-align: center;
+}
 footer {
+    font-family: "Play", system-ui;
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* Responsividade para tablets */
 @media (min-width: 768px) {
