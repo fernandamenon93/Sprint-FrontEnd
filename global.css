@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    width: 1920px;
+    height: 74px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    font-family: p   ;
+    font-weight: bold;
+    width: 163.88px;
+    height: 53.77px;
+}
+
+.hero {
+    display: grid;
+    place-items: center;
+    background: url('formula-e.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsividade para tablets */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsividade para desktops */
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
